@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OTP Verification</title>
+</head>
+<body>
+<table>
+	
+	<form class="form-signin" method="POST" action = '/otp/'>
+		{% csrf_token %}
+ 
+		<input type="text" name = "otp" id="inputEmail" class="form-control" placeholder="OTP" required autofocus>
+		<input type="hidden" name="phone_number" value = "{{ cell_number }}"/>
+  	<button  type="submit">OTP Verification</button>
+	</form>
+ 	
+  
+</table>
+</body>
+</html>

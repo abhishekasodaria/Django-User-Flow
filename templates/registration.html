@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+
+<form method="POST" action = '/registration/'>
+	{% csrf_token %}
+
+	<table>
+		<tr>
+			<td>UserName</td>
+			<td><input type="text" name="username"></td>
+		</tr>
+		<tr>
+			<td>Primary Email</td>
+			<td><input type="Email" name="email" required></td>
+		</tr>
+		<tr>
+			<td>Email 1</td>
+			<td><input type="Email" name="email2"></td>
+		</tr>
+		<tr>
+			<td>Email 2</td>
+			<td><input type="Email" name="email1"></td>
+		</tr>
+		
+		<tr>
+			<td>Phone Number</td>
+			<td><input type="number" name="phone_number"></td>
+		</tr>
+		
+		<tr>
+			<td>Password</td>
+			<td><input type="password" name="password"></td>
+		</tr>
+
+		<tr>
+			<button type="submit">Submit</button>
+		</tr>
+	</table>
+	
+</form>
+
+</body>
+</html>
+

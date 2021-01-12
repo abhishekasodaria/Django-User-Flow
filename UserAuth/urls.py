@@ -20,4 +20,6 @@ from registration import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('registration/',views.register,name = 'registration'),
+    path('login/',views.login,name = 'login'),
+    path('otp/',views.otp,name = 'otp')
 ]

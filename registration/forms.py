@@ -9,3 +9,5 @@ class RegistrationForm:
 
 		model = Account
 		fields = ['username','email','phone_number','password1']
+
+class Accoun
